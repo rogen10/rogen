@@ -65,7 +65,7 @@ token = database:get(id_server..":token"),
 SUDO = database:get(id_server..":SUDO:ID"),
 UserName = database:get(id_server..":SUDO:USERNAME"),
  }
-create(config, "./kkkklInfo.lua")   
+create(config, "./kabos_Info.lua")   
 end 
 infotnseb = {}
 infotnseb.id = database:get(id_server..":SUDO:ID")
@@ -95,7 +95,7 @@ exit 1
 fi
 if [ ! $token ]; then
 echo "•┄─━━━━•𝐑𝐎𝐎𝐆𝐄𝐍•━━━━─┄• •┄─━━━━•𝐑𝐎𝐎𝐆𝐄𝐍•━━━━─┄•"
-echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE kkkklInfo.lua \e[0m"
+echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE kados_Info.lua \e[0m"
 echo "•┄─━━━━•𝐑𝐎𝐎𝐆𝐄𝐍•━━━━─┄• •┄─━━━━•𝐑𝐎𝐎𝐆𝐄𝐍•━━━━─┄•"
 exit 1
 fi
@@ -132,7 +132,7 @@ file:write(serialized)
 file:close() 
 end 
 local load_redis = function()  
-local f = io.open("./kkkklInfo.lua", "r")  
+local f = io.open("./kabos_Info.lua", "r")  
 if not f then   
 AutoSet()  
 else   
@@ -140,7 +140,7 @@ f:close()
 database:del(id_server..":token")
 database:del(id_server..":SUDO:ID")
 end  
-local config = loadfile("./kkkklInfo.lua")() 
+local config = loadfile("./kabos_Info.lua")() 
 return config 
 end 
 _redis = load_redis()  
@@ -186,7 +186,7 @@ print([[
  ⊰ CH › @SO_ROGEN
 ╚≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╝
 ]])
-sudos = dofile("./kkkklInfo.lua") 
+sudos = dofile("./kabos_Info.lua") 
 SUDO = tonumber(sudos.SUDO)
 sudo_users = {SUDO}
 bot_id = sudos.token:match("(%d+)")  
@@ -14038,12 +14038,12 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n¦• 𝚄𝚂𝙴𝚁 ↬  ↝'..username..'↜  ↝💘\n¦• 𝙼𝚂𝙶𝚂↬  ↝'..Msguser..'↜  ↝💘\n¦• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜  ↝💘\n¦• 𝙸𝙳↬   ↝'..msg.sender_user_id_..'↜ ↝💘\n¦• 𝙱𝙸𝙾 ↬ ↝'..getbioY..'↜ ↝💘\n ¦• 𝒄𝒉↬  ↝@SO_ROGEN↜   ↝💘\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n◉ 𝐔𝐒𝐄𝐑↬ '..username..'  \n◉ 𝐌𝐒𝐆𝐒↬ '..Msguser..'  \n◉ 𝐑𝐀𝐍𝐊↬ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'  \n◉ 𝐈𝐃↬ '..msg.sender_user_id_..'  \n◉ 𝐁𝐈𝐎↬ '..getbioY..'  \n◉ 𝐂𝐇↬ @SO_ROGEN \n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي ↝'..Name..'↜ \n¦• 𝚄𝚂𝙴𝚁 ↬  ↝'..Name..'↜    ↝💘\n¦• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜.   ↝💘\n ¦• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝💘\n¦• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜    ↝💘\n¦• 𝒄𝒉↬   ↝@SO_ROGEN↜ ↝🇧??\n')
+send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي '..Name..' \n◉ 𝐔𝐒𝐄𝐑↬ '..Name..'  \n◉ 𝐌𝐒𝐆𝐒↬ '..Msguser..'  \n ◉ 𝐑𝐀𝐍𝐊↬ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'  \n◉ 𝐈𝐃↬ '..msg.sender_user_id_..' \n◉ 𝐂𝐇↬ @SO_ROGEN \n')
 else
-send(msg.chat_id_, msg.id_, '\n ◉ الصوره ⇜ ليس لديك صور في حسابك'..'[\n¦• 𝚄𝚂𝙴𝚁 ↬ ↝'..username..'↜\n¦• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜\n¦• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜\n¦• 𝒄𝒉↬  ↝@SO_ROGEN↜\n')
+send(msg.chat_id_, msg.id_, '\n ◉ الصوره ⇜ ليس لديك صور في حسابك'..'[\n◉ 𝐔𝐒𝐄𝐑 ↬ '..username..'  \n◉ 𝐌𝐒𝐆𝐒↬ '..Msguser..'  \n◉ 𝐈𝐃↬ '..msg.sender_user_id_..' \n◉ 𝐂𝐇↬ @SO_ROGEN  \n')
 end 
 end
 end
@@ -15206,7 +15206,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 ⚕𝙐𝙎𝙀𝙍??𝘼𝙈𝙀 : #username
-⚕𝙈𝙀𝙎𝙎??𝙂𝙀𝙎 : #msgs
+⚕𝙈𝙀??𝙎??𝙂𝙀𝙎 : #msgs
 ⚕𝙎𝙏𝘼𝙏𝙎 : #stast
 ⚕𝙄𝘿 : #id
 ⚕??𝙀𝙒𝙀𝙇𝙎 : #game
