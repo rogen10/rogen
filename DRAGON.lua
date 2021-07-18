@@ -146,11 +146,41 @@ end
 _redis = load_redis()  
 --------------------------------------------------------------------------------------------------------------
 print([[
-
-> CH ↝@SO_ROGEN↜
-~> dev↝@M_A_G_K↜
-~> dev↝@G_W_P↜
-~> dev↝@I_C_X↜
+╔≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╗
+  ⊰ تم تنصيب البوت بنجاح
+  ⊱شكرا لاستخدامك سورس روجين
+╚≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╝
+╔≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╗
+ ⊰ WEICOM TO SOURCE ROGEN
+╚≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╝
+ ≂≂≂≂≂≂≂≂≂SOURCE ROGEN≂≂≂≂≂≂≂≂≂≂
+╔≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╗
+  ⊰ تم تطوير وبرمجه السورس 
+╚≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╝
+ ≂≂≂≂≂≂≂≂≂SOURCE ROGEN≂≂≂≂≂≂≂≂≂≂
+╔≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╗
+  ⊰ مـن قـبـل مـارتــن  
+╚≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╝
+≂≂≂≂≂≂≂≂≂SOURCE ROGEN≂≂≂≂≂≂≂≂≂≂
+╔≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╗
+  ⊰مـن قـبـل الـكـابـوس 
+╚≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╝
+≂≂≂≂≂≂≂≂≂SOURCE ROGEN≂≂≂≂≂≂≂≂≂≂
+╔≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╗
+ ⊰ ᴅᴇᴠᴇʟᴏᴘᴇʀ ⊱ @I_C_X
+╚≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╝
+≂≂≂≂≂≂≂≂≂≂SOURCE ROGEN≂≂≂≂≂≂≂≂≂
+╔≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╗
+ ⊰ ᴅᴇᴠᴇʟᴏᴘᴇʀ ⊱ @G_W_P
+╚≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╝
+≂≂≂≂≂≂≂≂≂≂SOURCE ROGEN≂≂≂≂≂≂≂≂≂
+╔≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╗
+ ⊰ ᴅᴇᴠᴇʟᴏᴘᴇʀ ⊱ @M_A_G_K
+╚≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╝
+≂≂≂≂≂≂≂≂≂≂SOURCE ROGEN≂≂≂≂≂≂≂≂≂
+╔≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╗
+ ⊰ CH › @SO_ROGEN
+╚≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂≂╝
 ]])
 sudos = dofile("./kkkklInfo.lua") 
 SUDO = tonumber(sudos.SUDO)
@@ -3097,7 +3127,7 @@ end,nil)
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
 local Text = [[
-[𝐰𝐞𝐥𝐜𝐨𝐦 𝐨𝐧 𝐬𝐨𝐮𝐫??𝐞 𝐫𝐨??𝐠𝐞𝐧](t.me/SO_ROGEN)
+[𝐰𝐞𝐥𝐜𝐨𝐦 𝐨𝐭 𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐨𝐨𝐠𝐞𝐧](t.me/SO_ROGEN)
 
 [𝐭𝐡𝐞 𝐛𝐞𝐬𝐭 𝐬𝐨𝐮𝐫𝐜𝐞 𝐨𝐧 𝐭𝐞𝐭𝐥𝐞𝐠𝐫𝐚𝐦](t.me/SO_ROGEN)
 
@@ -3108,6 +3138,7 @@ keyboard.inline_keyboard = {
 {{text = '𝐝𝐞𝐯 𝐚𝐥𝐦𝐚𝐠𝐤',url="t.me/M_A_G_K"},{text = '𝐝𝐞𝐯 𝐦𝐚𝐫𝐭𝐞𝐧', url="t.me/I_C_X"}},
 {{text = '𝐝𝐞𝐯 𝐞𝐥𝐤𝐚𝐛𝐨𝐨𝐬', url="t.me/G_W_P"}},
 {{text = '𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐨𝐨𝐠𝐞𝐧', url="t.me/SO_ROGEN"}},
+{{text = 'اضف البوت لمجموعتك', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/ROOGEN1/18&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13399,7 +13430,7 @@ return false
 end
 
 if text then 
-list = {'💋'}
+list = {'??'}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
@@ -14319,7 +14350,7 @@ local List = {
 𖡋 𝐒𝐓𝐀 #stast 
 𖡋 𝐈𝐃 #id 
 𖡋 𝐄𝐃𝐈𝐓 #edit
-𖡋 𝗖𝗛 - ↝@SO_ROGEN↜ ◉.
+𖡋 ??𝗛 - ↝@SO_ROGEN↜ ◉.
 ]],
 [[
 𖤂 ~ 𝑢𝑠𝑒 #username  𖤐
@@ -14773,7 +14804,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 𝐢𝐝 . #id 𖣂.
 - 🇪🇬 𝒈𝒂𝒎𝒆𝒔 . #game 𖣂.
 - 🇪🇬 𝐦𝐬𝐠 . #msgs 𖣂.
-- 🇪🇬 𝗖𝗛 - ↝@SO_ROGEN↜ ◉.
+- 🇪🇬 𝗖?? - ↝@SO_ROGEN↜ ◉.
 ]],
 [[
 ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 . #username 🇪🇬 ꙰
