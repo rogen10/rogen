@@ -1261,7 +1261,7 @@ end
 tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil) 
 end
 if text == '/start' and DevSoFi(msg) then 
-local Text = '◉  انت الان المطور الاساسي في البوت \n ◉  سورس روجين\n ◉  يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/SO_ROGEN)'
+local Text = '◉ انت الان المطور الاساسي في البوت \n◉ سورس روجين\n◉ يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/SO_ROGEN)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName}}, 
@@ -1388,7 +1388,7 @@ if text == 'الاصدار' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' ◉ اصدار سورس روجين{ 3x◉}')
 end
-if text == '┄─━━•𝐒𝐎𝐔𝐑𝐂𝐄 𝐑𝐎𝐎𝐆𝐄𝐍•━━─┄' then
+if text == '┄─━━•⟮مبرمجين السورس⟯•━━─┄' then
 local Text = [[ 
 قناه مطورين السورس 🍂
 محتاج تنصب بوت حمايه ببلاش تواصل معانا✅
@@ -1401,17 +1401,6 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ROOGEN1/4&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == '┄─━━•𝐒𝐎𝐔𝐑𝐂𝐄 𝐑𝐎𝐎𝐆𝐄𝐍•━━─┄' and DevSoFi(msg) then
-local Text = [[ 
-[قناه سورس روجين ادخل وتابع الجديد](t.me/SO_ROGEN)
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐨𝐨𝐠𝐞𝐧', url="t.me/SO_ROGEN"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/ROOGEN1/18&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == '┄─━━•⟮الاقسام⟯•━━─┄' and DevSoFi(msg) then
 local Text = [[ 
 [قناه سورس روجين ادخل وتابع الجديد](t.me/SO_ROGEN)
 ]] 
@@ -14777,7 +14766,7 @@ local List = {
 🇪🇬 - 𝄬 𝐔ˢᴱᴿᴺᴬᴹᴱ . #username  𓃠
 🇪🇬 - 𝄬 ˢᵀᴬˢᵀ . #stast  𓃠
 🇪?? - 𝄬 ᴵᴰ . #id 𓃠
-🇪🇬 - 𝄬 ᴳᴹᴬˢ . #gmas 𓃠
+🇪?? - 𝄬 ᴳᴹᴬˢ . #gmas 𓃠
 🇪🇬 - 𝄬 ᴹˢᴳˢ . #msgs  𓃠
 🇪🇬 - 𝄬 𝗖𝗛 - ↝@SO_ROGEN↜ ◉.
 ]],
