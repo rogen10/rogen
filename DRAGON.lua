@@ -11935,10 +11935,10 @@ msg_type = 'MSG:NewUser'
 end
 
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'سون').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'سون')
-local BANDA_Msg = {
-'ننعم يروحي 😻??',
+if text == ""..(database:get(bot_id..'Name:Bot') or 'روجين').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'روجين')
+local DRAGON_Msg = {
+'ننعم يروحي 😻♥️',
 'نعم يا قلب  '..Namebot..'',
 'عاوز اي من '..Namebot..'',
 'دوختو  '..Namebot..'',
@@ -11953,10 +11953,17 @@ local BANDA_Msg = {
 'انا '..Namebot..' احسن البوتات 🤩♥️',
 'نعم'
 } 
-Namebot = BANDA_Msg[math.random(#BANDA_Msg)] 
+Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
 keyboard = {} 
-keyboard.inline_keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+},
+{
+{text = 'اضف البوت لمجموعتك', url="http://t.me/"..sudos.UserName.."?startgroup=new"},
+},
+}
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -11967,11 +11974,11 @@ end
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
 if text == "بوت" then
-local Namebot = (database:get(bot_id..'Name:Bot') or 'سون') 
-local BANDA_Msg = { 
+local Namebot = (database:get(bot_id..'Name:Bot') or 'روجين') 
+local DRAGON_Msg = { 
 'اسمي  '..Namebot..' يا قلبي 🤤💚',
 'اسمي '..Namebot..' يا روحي🙈❤️',
-'اسمي  '..Namebot..' يعمري🌚🌹',
+'اسمي  '..Namebot..' يعمري☆🌹',
 'اسمي  '..Namebot..' يا قمر 🐭🤍',
 'اسمي  '..Namebot..' يامزه 🥺❤️',
 'اسمي  '..Namebot..' يعم 😒',
@@ -11980,10 +11987,17 @@ local BANDA_Msg = {
 'اسمي  '..Namebot..' ياحياتي🧸♥️',
 'اسمي  '..Namebot..' يوتكه🙈🍑',
 } 
-Namebot = BANDA_Msg[math.random(#BANDA_Msg)] 
+Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
 keyboard = {} 
-keyboard.inline_keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+},
+{
+{text = 'اضف البوت لمجموعتك', url="http://t.me/"..sudos.UserName.."?startgroup=new"},
+},
+}
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -16047,7 +16061,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. 
 return false
 end
 ----------------------------------------------------------------------------
-if text == 'الالعاب' then
+if text == 'العاب السورس' or text == 'الالعاب' or text == 'مميزات' then
 local Text = [[
 •┄─━━━━•𝐑𝐎𝐎𝐆𝐄𝐍•━━━━─┄•
 🎮 اهلا بك في قسم الالعاب بسورس روجين ⇊
@@ -16073,7 +16087,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'امر الـعـضو ' or text == 'اوامر الأعضاء' or text == 'اوامر الاعضاء' then
+if text == 'امر الـعـضو' or text == 'اوامر الأعضاء' or text == 'اوامر الاعضاء' then
 local Text = [[
  اتبع الاوامر الاعضاء
  •┄─━━━━•𝐑𝐎𝐎𝐆𝐄𝐍•━━━━─┄•
