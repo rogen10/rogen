@@ -800,7 +800,7 @@ local function trigger_anti_spam(msg,type)
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
 local Name = '['..utf8.sub(data.first_name_,0,40)..'](tg://user?id='..data.id_..')'
 if type == 'kick' then 
-Text = '\n ◉ العضــو  ⇇↝'..Name..'↜\n ◉ قام بالتكرار هنا وتم طرده '  
+Text = '\n ◉ العضو  ⇇↝'..Name..'↜\n ◉ قام بالتكرار هنا وتم طرده '  
 sendText(msg.chat_id_,Text,0,'md')
 chat_kick(msg.chat_id_,msg.sender_user_id_) 
 my_ide = msg.sender_user_id_
@@ -844,12 +844,12 @@ DeleteMessage(msg.chat_id_, {[0] = data.messages_[0].id_})
 end;end;end, nil)
 msgm = msgm - 1048576
 end
-Text = '\n ◉ العضــو  ⇇↝'..Name..'↜\n ◉ قام بالتكرار هنا وتم تقييده '  
+Text = '\n ◉ العضو  ⇇↝'..Name..'↜\n ◉ قام بالتكرار هنا وتم تقييده '  
 sendText(msg.chat_id_,Text,0,'md')
 return false  
 end  
 if type == 'mute' then
-Text = '\n ◉ العضــو  ⇇↝'..Name..'↜\n ◉ قام بالتكرار هنا وتم كتمه '  
+Text = '\n ◉ العضو  ⇇↝'..Name..'↜\n ◉ قام بالتكرار هنا وتم كتمه '  
 sendText(msg.chat_id_,Text,0,'md')
 database:sadd(bot_id..'Muted:User'..msg.chat_id_,msg.sender_user_id_) 
 msgm = msg.id_
@@ -8075,7 +8075,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Mote:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◉ العضو   ⇇['..data.first_name_..'](t.me/'..(data.username_ or 'DEVBESSO')..')'
+usertext = '\n ◉ العضو   ⇇['..data.first_name_..'](t.me/'..(data.username_ or 'SO_ROGEN')..')'
 local  statuss  = '\n ◉ تم رفع العضو  متوحد في الجروب \n'
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -8144,8 +8144,8 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Mode:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◉ العضــو  ⇇['..data.first_name_..'](t.me/'..(data.username_ or 'DEVBESSO')..')'
-local  statuss  = '\n ◉ تم رفع العضــو زوجه في الجروب \n'
+usertext = '\n ◉ العضو  ⇇['..data.first_name_..'](t.me/'..(data.username_ or 'SO_ROGEN')..')'
+local  statuss  = '\n ◉ تم رفع العضو زوجه في الجروب \n'
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
 end
@@ -8166,8 +8166,8 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Mode:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◉ العضــو  ⇇['..data.first_name_..'](t.me/'..(data.username_ or 'SO_ROGEN')..')'
-status  = '\n ◉ تم تنزيل العضــو الزوجات من الجروب\n'
+usertext = '\n ◉ العضو  ⇇['..data.first_name_..'](t.me/'..(data.username_ or 'SO_ROGEN')..')'
+status  = '\n ◉ تم تنزيل العضو الزوجات من الجروب\n'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
 end
@@ -8213,8 +8213,8 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Modde:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◉ العضــو  ⇇['..data.first_name_..'](t.me/'..(data.username_ or 'DEVBESSO')..')'
-local  statuss  = '\n ◉ تم رفع العضــو كلب في الجروب \n'
+usertext = '\n ◉ العضو  ⇇['..data.first_name_..'](t.me/'..(data.username_ or 'SO_ROGEN')..')'
+local  statuss  = '\n ◉ تم رفع العضو كلب في الجروب \n'
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
 end
@@ -8235,8 +8235,8 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Modde:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◉ العضــو  ⇇['..data.first_name_..'](t.me/'..(data.username_ or 'SO_ROGEN')..')'
-status  = '\n ◉ تم تنزيل العضــو كلب من الجروب\n'
+usertext = '\n ◉ العضو  ⇇['..data.first_name_..'](t.me/'..(data.username_ or 'SO_ROGEN')..')'
+status  = '\n ◉ تم تنزيل العضو كلب من الجروب\n'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
 end
@@ -9248,7 +9248,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Zahf:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◉ العضو  ← ['..data.first_name_..'](t.me/'..(data.username_ or 's_o_op')..')'
+usertext = '\n ◉ العضو  ← ['..data.first_name_..'](t.me/'..(data.username_ or 'SO_ROGEN')..')'
 local  statuss  = '\n ◉ تم رفع حكاك في الجروب\n ◉ احمرت ولا لسا'
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -9270,7 +9270,7 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Zahf:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◉ العضو  ← ['..data.first_name_..'](t.me/'..(data.username_ or 's_o_op')..')'
+usertext = '\n ◉ العضو  ← ['..data.first_name_..'](t.me/'..(data.username_ or 'SO_ROGEN')..')'
 status  = '\n ◉ تم تنزيل حكاك من الجروب\n ◉ لا يسطت هيفضل حكاك رسمي'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -9316,7 +9316,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Girl:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◉ العضو  ← ['..data.first_name_..'](t.me/'..(data.username_ or 's_o_op')..')'
+usertext = '\n ◉ العضو  ← ['..data.first_name_..'](t.me/'..(data.username_ or 'SO_ROGEN')..')'
 local  statuss  = '\n ◉ تم رفع مره في الجروب\n ◉ ها صرتي من نسواني تعي ندخل'
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -9338,7 +9338,7 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Girl:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◉ العضو  ← ['..data.first_name_..'](t.me/'..(data.username_ or 's_o_op')..')'
+usertext = '\n ◉ العضو  ← ['..data.first_name_..'](t.me/'..(data.username_ or 'SO_ROGEN')..')'
 status  = '\n ◉ تم تنزيل مره من الجروب\n ◉ بتاعي غضبان عليكي ليوم الدين'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -9384,7 +9384,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Mode:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◉ العضــو ← ['..data.first_name_..'](t.me/'..(data.username_ or 'DEVBESSO')..')'
+usertext = '\n ◉ العضو ← ['..data.first_name_..'](t.me/'..(data.username_ or 'SO_ROGEN')..')'
 local  statuss  = '\n ◉ تم زواجكم بنجاح في الجروب \n ◉ الطلاق امتي عشان ابقي موجود '
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -9406,7 +9406,7 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Mode:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◉ العضــو ← ['..data.first_name_..'](t.me/'..(data.username_ or 's_o_op')..')'
+usertext = '\n ◉ العضو ← ['..data.first_name_..'](t.me/'..(data.username_ or 'SO_ROGEN')..')'
 status  = '\n ◉ تم طلاقكم بنجاح في الجروب\n ◉ اوجعو تاني ونبي'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
