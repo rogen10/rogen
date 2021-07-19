@@ -13045,7 +13045,7 @@ if text == 'الاحصائيات' then
 if Sudo(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
-Text = ' ◉ الاحصائيات  \n'..' ◉ عدد الجروبات  ⇇{'..Groups..'}'..'\n ◉  عدد المشتركين  ⇇{'..Users..'}'
+Text = '◉ الاحصائيات  \n'..'◉ عدد الجروبات  ⇇{'..Groups..'}'..'\n◉ عدد المشتركين  ⇇{'..Users..'}'
 send(msg.chat_id_, msg.id_,Text) 
 end
 return false
@@ -13383,16 +13383,6 @@ send(msg.chat_id_, msg.id_,"  ")
 return false  
 end
 send(msg.chat_id_,msg.id_, 'لا يهقر انا بوت مش بموت 🤭❤') 
-return false
-end
-
-if text == 'ده بوت' == 'دا بوت' then 
-local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_,"  ") 
-return false  
-end
-send(msg.chat_id_,msg.id_, 'ايدي هو مفكرني بنادم .. 🙂😹') 
 return false
 end
 
@@ -17016,7 +17006,7 @@ local Teext =[[
  ◉ مسح قائمه العام
  ◉ جلب النسخه
  ◉ رفع النسخه
-•┄─━━━━•𝐑𝐎𝐎𝐆𝐄𝐍•━━━━─┄•
+•┄─━━━━•𝐑𝐎𝐎𝐆??𝐍•━━━━─┄•
  ◉ اذاعه خاص
  ◉ اذاعه
  ◉ اذاعه بالتوجيه
