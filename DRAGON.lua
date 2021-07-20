@@ -11959,40 +11959,6 @@ end
 msg_type = 'MSG:NewUser'
 end
 
-if text == "بوتي" or text == "يا بوتي" and DevSoFi(msg) then  
-local Namebot = (database:get(bot_id..'Name:Bot') or 'روجين') 
-local DRAGON_Msg = { 
-'ننعم يروحي 😻♥️',
-'نعم يا قلب '..Namebot..'',
-'عاوز اي من '..Namebot..'',
-'ايوا جاي 🙈',
-'طب متصلي على النبي كدا 🙂♥',
-'تع اشرب شاي 🥺♥',
-'دوس على الخوخه 🍑🙈',
-'متيجي 😉',
-'ياض خش نام 😂❤',
-'انا '..Namebot..' احسن البوتات 🤩♥️',
-'نعم',
-} 
-Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
-local msg_id = msg.id_/2097152/0.5  
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
-},
-}
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else 
-send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
-end 
-end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
-end
-
-
 if text == ""..(database:get(bot_id..'Name:Bot') or 'روجين').."" then  
 Namebot = (database:get(bot_id..'Name:Bot') or 'روجين')
 local DRAGON_Msg = {
@@ -12006,7 +11972,7 @@ local DRAGON_Msg = {
 'بطه مش ليك يمرزوق 😹❤',
 'طب متصلي على النبي كدا 🙂❤',
 'تع اشرب شاي 🥺❤️',
-'ايوهه ينقم 🤔 ❤️',
+'علفكره بحبك 🥺♥',
 'دوس على الخوخه 🍑🙈 ',
 'متيجي 😉♥',
 'ياض خش نام 😂♥',
