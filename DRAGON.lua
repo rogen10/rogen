@@ -3134,7 +3134,6 @@ keyboard.inline_keyboard = {
 {{text = '𝐝𝐞𝐯 𝐚𝐥𝐦𝐚𝐠𝐤',url="t.me/M_A_G_K"},{text = '𝐝𝐞𝐯 𝐦𝐚𝐫𝐭𝐞𝐧', url="t.me/I_C_X"}},
 {{text = '𝐝𝐞𝐯 𝐞𝐥𝐤𝐚𝐛𝐨𝐨𝐬', url="t.me/G_W_P"}},
 {{text = '𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐨𝐨𝐠𝐞𝐧', url="t.me/SO_ROGEN"}},
-{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./kabos_Info.lua").botUserName.."?startgroup=start"},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/ROOGEN1/18&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12001,9 +12000,9 @@ local Namebot = (database:get(bot_id..'Name:Bot') or 'روجين')
 local DRAGON_Msg = { 
 'اسمي '..Namebot..' يا قلبي 🤤❤️',
 'اسمي '..Namebot..' يقمد🥺❤',
-'اسمي '..Namebot..' يا روحي🙈❤️',
+'اسمي '..Namebot..' يا روحي♥🙈',
 'اسمي '..Namebot..' يعمري🤔 ❤️',
-'اسمي '..Namebot..' يعسل🙈 ❤️',
+'اسمي '..Namebot..' يعسل♥🙈',
 'اسمي '..Namebot..' يا قمر 🥺❤',
 'اسمي '..Namebot..' يكلحياتي😘❤️',
 'اسمي '..Namebot..' يامزه 🥺❤️',
@@ -12011,7 +12010,7 @@ local DRAGON_Msg = {
 'مقولت اسمي '..Namebot..' في اي 🙄❤️',
 'اسمي الكيوت '..Namebot..' 🌝💗',
 'اسمي '..Namebot..' ياحياتي🧸♥️',
-'اسمي '..Namebot..' يوتكه🙈🍑',
+'اسمي '..Namebot..' يوتكه🥺❤',
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
@@ -14877,7 +14876,7 @@ Msᴀɢ ~ #msgs
 𓄼 ѕᴛᴀ : #stast  ☥
 𓄼 ɪᴅ : #id ‌‌‏⚚
 𓄼 ᴍѕɢ : #msgs 𓆊 
-𓐀 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𓀃.
+?? 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𓀃.
 𓄼 𝗖𝗛 - ↝@SO_ROGEN↜ ◉.
 ]],
 [[
