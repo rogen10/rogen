@@ -3134,6 +3134,7 @@ keyboard.inline_keyboard = {
 {{text = '𝐝𝐞𝐯 𝐚𝐥𝐦𝐚𝐠𝐤',url="t.me/M_A_G_K"},{text = '𝐝𝐞𝐯 𝐦𝐚𝐫𝐭𝐞𝐧', url="t.me/I_C_X"}},
 {{text = '𝐝𝐞𝐯 𝐞𝐥𝐤𝐚𝐛𝐨𝐨𝐬', url="t.me/G_W_P"}},
 {{text = '𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐨𝐨𝐠𝐞𝐧', url="t.me/SO_ROGEN"}},
+{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./kabos_Info.lua").botUserName.."?startgroup=start"},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/ROOGEN1/18&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -11958,22 +11959,57 @@ end
 msg_type = 'MSG:NewUser'
 end
 
+if text == "بوتي" or text == "يا بوتي" and DevSoFi(msg) then  
+local Namebot = (database:get(bot_id..'Name:Bot') or 'روجين') 
+local DRAGON_Msg = { 
+'ننعم يروحي 😻♥️',
+'نعم يا قلب '..Namebot..'',
+'عاوز اي من '..Namebot..'',
+'ايوا جاي 🙈',
+'طب متصلي على النبي كدا 🙂♥',
+'تع اشرب شاي 🥺♥',
+'دوس على الخوخه 🍑🙈',
+'متيجي 😉',
+'ياض خش نام 😂❤',
+'انا '..Namebot..' احسن البوتات 🤩♥️',
+'نعم',
+} 
+Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
+local msg_id = msg.id_/2097152/0.5  
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
+end 
+end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
+end
+
 
 if text == ""..(database:get(bot_id..'Name:Bot') or 'روجين').."" then  
 Namebot = (database:get(bot_id..'Name:Bot') or 'روجين')
 local DRAGON_Msg = {
 'ننعم يروحي 😻♥️',
-'نعم يا قلب  '..Namebot..'',
+'نعم يا قلب '..Namebot..'',
 'عاوز اي من '..Namebot..'',
-'دوختو  '..Namebot..'',
-'بتشقط وجي ويت 🤪',
+'دوختو '..Namebot..'',
+'ايوا يروحقلب '..Namebot..'',
+'بتشقط وجي ويت 🙂😹',
 'ايوا جاي 🙈',
-'يعم هتسحر واجي 😾',
-'طب متصلي على النبي كدا 🙂💜',
-'تع اشرب شاي 🥺💙',
-'دوس على الخوخه 🍑',
-'متيجي 😉',
-'ياض خش نام 😂',
+'بطه مش ليك يمرزوق 😹❤',
+'طب متصلي على النبي كدا 🙂❤',
+'تع اشرب شاي 🥺❤️',
+'ايوهه ينقم 🤔 ❤️',
+'دوس على الخوخه 🍑🙈 ',
+'متيجي 😉♥',
+'ياض خش نام 😂♥',
 'انا '..Namebot..' احسن البوتات 🤩♥️',
 'نعم'
 } 
@@ -11997,16 +12033,19 @@ end
 if text == "بوت" then
 local Namebot = (database:get(bot_id..'Name:Bot') or 'روجين') 
 local DRAGON_Msg = { 
-'اسمي  '..Namebot..' يا قلبي 🤤💚',
+'اسمي '..Namebot..' يا قلبي 🤤❤️',
+'اسمي '..Namebot..' يقمد🥺❤',
 'اسمي '..Namebot..' يا روحي🙈❤️',
-'اسمي  '..Namebot..' يعمري◉🌹',
-'اسمي  '..Namebot..' يا قمر 🐭🤍',
-'اسمي  '..Namebot..' يامزه 🥺❤️',
-'اسمي  '..Namebot..' يعم 😒',
-'مقولت اسمي '..Namebot..' في اي 🙄',
-'اسمي الكيوت '..Namebot..' 🌝💘',
-'اسمي  '..Namebot..' ياحياتي🧸♥️',
-'اسمي  '..Namebot..' يوتكه🙈🍑',
+'اسمي '..Namebot..' يعمري🤔 ❤️',
+'اسمي '..Namebot..' يعسل🙈 ❤️',
+'اسمي '..Namebot..' يا قمر 🥺❤',
+'اسمي '..Namebot..' يكلحياتي😘❤️',
+'اسمي '..Namebot..' يامزه 🥺❤️',
+'اسمي '..Namebot..' يعم 😂❤️',
+'مقولت اسمي '..Namebot..' في اي 🙄❤️',
+'اسمي الكيوت '..Namebot..' 🌝💗',
+'اسمي '..Namebot..' ياحياتي🧸♥️',
+'اسمي '..Namebot..' يوتكه🙈🍑',
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
@@ -15312,7 +15351,7 @@ Msᴀɢ ~ #msgs
 ♡ : 𝐼𝐷 𖠀 #id .
 ♡ : 𝑈𝑆𝐸𝑅 𖠀 #username .
 ♡ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .
-♡ : 𝑆𝑇𝐴𝑇𝑆 𖠀 #stast .
+♡ : 𝑆𝑇??𝑇𝑆 𖠀 #stast .
 ♡ : 𝐸𝐷𝐼𝑇  𖠀 #edit .
 ♡ : 𝗖𝗛 - ↝@SO_ROGEN↜ ◉
 ]],
