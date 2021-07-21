@@ -3191,7 +3191,26 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/I_C_X&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-
+if text == 'بندا' or text == 'بنضدا' or text == 'api' then
+local Text = [[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐨𝐨𝐠𝐞𝐧', url="t.me/SO_ROGEN"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token.. /sendvideo?chat_id=  .. msg.chat_id_ ..  &video=https://t.me/SO_ROGEN/271&caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "بندا بيعيط" or text == 'بنضدا بيعيط' then
+local Text = [[  
+]]
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐨𝐨𝐠𝐞𝐧', url="t.me/SO_ROGEN"}}, 
+}
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/SO_ROGEN/265&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if text == 'يوتيوب' or text == 'بحث' or text == 'اليوتيوب' then
 local Text = [[
  اليك بوتات تحميل من جميع المواقع ❤️.
@@ -3207,7 +3226,6 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ROOGEN1/8&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-
 if text == 'مبرمج السورس' then
 local Text = [[
 الكابوس مبرمج سورس روجين لوحابب تتواصل معاه ❤️.
