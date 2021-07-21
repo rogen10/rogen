@@ -3191,6 +3191,26 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/I_C_X&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+if text == 'بندا' or text == 'بنضدا' or text == 'api' then
+local Text = [[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐨𝐨𝐠𝐞𝐧', url="t.me/SO_ROGEN"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token.. /sendvideo?chat_id=  .. msg.chat_id_ ..  &video=https://t.me/SO_ROGEN/271&caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "بندا بيعيط" or text == 'بنضدا بيعيط' then
+local Text = [[  
+]]
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐨𝐨𝐠𝐞𝐧', url="t.me/SO_ROGEN"}}, 
+}
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/SO_ROGEN/265&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if text == 'يوتيوب' or text == 'بحث' or text == 'اليوتيوب' then
 local Text = [[
  اليك بوتات تحميل من جميع المواقع ❤️.
@@ -9045,7 +9065,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم تنزيل جميع زواحف')
 end
 if text == ("تاك للرقاصات") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n ◉ قائمة رقاصات الجروب \n•┄─━━━━•𝐑𝐎𝐎𝐆𝐄𝐍•━━━━─┄•\n"
+t = "\n ◉ قائمة رقاصات الجروب \n•┄─━━━━•𝐑𝐎𝐎𝐆𝐄??•━━━━─┄•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
