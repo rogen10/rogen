@@ -13383,30 +13383,6 @@ send(msg.chat_id_,msg.id_, 'لا يهقر انا بوت مش بموت 🤭❤')
 return false
 end
 
-if text == 'باندا بيعيط' or text == 'باند' or text == 'api' then
-local Text = [[ 
-باندا ابو شخه اهو 😂😂😂😂❤️
-]]
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐨𝐨𝐠𝐞𝐧', url="t.me/SO_ROGEN"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/SO_ROGEN/265&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-
-if text == 'باندا العبيط' or text == 'بندا or text == 'بنضدا' then
-local Text = [[ 
-باندا العبيط اهو🙂😹
-]]
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐨𝐨𝐠𝐞𝐧', url="t.me/SO_ROGEN"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/SO_ROGEN/271&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-
 if text == 'سلام' then 
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
